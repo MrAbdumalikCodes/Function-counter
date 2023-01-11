@@ -1,0 +1,50 @@
+.app{
+  width: 50%;
+  border-radius: 12px;
+  box-shadow: 1px 4px 7px rgba(0,0,0,.5);
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
+  height: 60vh;
+}
+
+.app button{
+  height: 33px;
+  background-color: red;
+  width: 40px;
+  margin: 0 auto;
+  color:#ffff;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+.app button:nth-child(3){
+  margin-top: 10px;
+  background-color: blue;
+  margin-left: 30px;
+}
+.app div{
+  font-size: 24px;
+  font-weight: 700;
+}
+.app .show{
+  width: 120px;
+  height: 33px;
+  margin-top: 23px;
+  background-color: green;
+}
+.app input{
+  width: 95%;
+  margin: 0 auto;
+  font-size: 24px;
+  height: 20px;
+  outline: 0;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 0.5px solid black;
+  padding: 10px;
+}
+input:focus{
+  border: 0;
+  box-shadow:1px 1px 10px 0px blueviolet;
+}
