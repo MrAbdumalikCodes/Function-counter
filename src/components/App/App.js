@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import '../App/App.css'
 import { TableList } from '../TableList/TableList'
 import Mybutton from '../UI/MyButton/button'
+import { MyInput } from '../UI/MyInput/MyInput'
 
 
 export default function App() {
@@ -16,14 +17,12 @@ export default function App() {
       <div className='app w-50 mx-auto border-1'>
         <form>
           <h5 className='text-center'>Create your first post</h5>
-          <input type="text"
-            className="form-control" 
-            placeholder='Programming language...'
-          />
-          <input type="text"
-            className='form-control my-3' 
-            placeholder='Enter your favorite stack...'
-          />
+          <MyInput type="text"
+           className="form-control" 
+           placeholder="Create new post"/>
+          <MyInput 
+          className='form-control my-3' 
+          placeholder='Enter your favorite stack...'/>
           <Mybutton disabled>Add post</Mybutton>
         </form>
       <TableList post={post} title="Programming Language"/>
