@@ -2,7 +2,6 @@ import React from 'react'
 import Mybutton from '../UI/MyButton/button';
 
 const TableItem = (props) => {
-    console.log(props);
     const {title,stack,id} = props.post
     return(
         <>
