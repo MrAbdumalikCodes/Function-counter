@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const MyInput = React.forwardRef((props,ref) => {
+export const MyInput = (props) => {
   return (
-    <input {...props} ref={ref}/>
+    <input {...props}/>
   )
-})
+}

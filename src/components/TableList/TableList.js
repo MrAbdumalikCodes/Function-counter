@@ -7,8 +7,8 @@ export const TableList = ({post,title}) => {
      <h2 className='text-center'>{title}</h2>
         <table class="table table-striped">
       <TableHeader title={title}/>
-      {post.map(post => (
-        <TableItem post={post} key={post.id}/>
+      {post.map((post,index) => (
+        <TableItem number={index + 1} post={post} key={post.id}/>
       ))}
       </table>
     </>

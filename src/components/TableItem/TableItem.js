@@ -2,14 +2,13 @@ import React from 'react'
 import Mybutton from '../UI/MyButton/button';
 
 const TableItem = (props) => {
-    const {title,stack,id} = props.post
     return(
         <>
             <tbody>
                 <tr>
-            <td>{id}</td>
-            <td>{title}</td>
-            <td>{stack}</td>
+            <td>{props.number}</td>
+            <td>{props.post.title}</td>
+            <td>{props.post.stack}</td>
             <td>
                 <Mybutton>Delete</Mybutton>
               </td>
