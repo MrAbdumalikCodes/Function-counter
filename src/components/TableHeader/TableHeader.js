@@ -5,11 +5,11 @@ const TableHeader = () => {
     <thead>
     <tr>
       <th>#</th>
-      <th>Propgramming</th>
+      <th>Programming</th>
       <th>Stack</th>
       <th>Actions</th>
     </tr>
-          </thead>
+    </thead>
   )
 }
 export  default TableHeader

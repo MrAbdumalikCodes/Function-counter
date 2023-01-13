@@ -1,0 +1,16 @@
+import React from 'react'
+import TableHeader from '../TableHeader/TableHeader'
+import TableItem from '../TableItem/TableItem'
+export const TableList = ({post,title}) => {
+  return (
+    <>
+     <h2 className='text-center'>{title}</h2>
+        <table class="table table-striped">
+      <TableHeader title={title}/>
+      {post.map(post => (
+        <TableItem post={post} key={post.id}/>
+      ))}
+      </table>
+    </>
+  )
+}
