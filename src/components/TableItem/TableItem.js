@@ -10,7 +10,9 @@ const TableItem = (props) => {
             <td>{props.post.title}</td>
             <td>{props.post.stack}</td>
             <td>
-                <Mybutton>Delete</Mybutton>
+                <Mybutton onClick={() => props.removePost(props.post)}>
+                    Delete
+                </Mybutton>
               </td>
                 </tr>
             </tbody>

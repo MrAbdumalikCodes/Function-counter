@@ -14,11 +14,18 @@ export default function App() {
   const createPost = (newPost) => {
     setPost([...post,newPost])
   }
+
+  const removePost = (posts) => {
+    setPost(post.filter(s => s.id !== posts.id))
+  }
   return (
     <>
       <div className='app w-50 mx-auto border-1'>
       <PostForm createPost = {createPost}/>
-      <TableList post={post} title="Programming Language"/>
+      {post.length
+      ? <TableList removePost ={removePost} post={post} title="Programming Language"/>
+      : <h4 className='my-3 text-center text-red'>You should add some Post</h4>
+      } 
       </div>
     </>
   )
